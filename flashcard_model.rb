@@ -9,6 +9,10 @@ class Question
   def to_s
     "#{question} - #{answer}"
   end
+
+  def correct_answer(string)
+    true if string == answer
+  end
 end
 
 class QuestionParser
@@ -70,6 +74,6 @@ end
 
 
 
-parser = QuestionParser.new
+# parser = QuestionParser.new
 
-puts parser.execute
+# puts parser.execute
